@@ -27,6 +27,12 @@ export const EmpForm = ({ getData }) => {
         [id]: "Married",
       });
     }
+    else if(e.target.checked === false){
+      setempData({
+        ...empData,
+        [id] : "Unmarried"
+      })
+    }
   };
 
   const handleSubmit = (e) => {
